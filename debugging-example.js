@@ -1,4 +1,4 @@
-// Story: Lemonade Stand
+// Lemonade Stand
 // Goal: calculate total price with an optional coupon discount.
 // This code contains a bug that needs to be fixed.
 
