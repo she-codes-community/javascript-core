@@ -6,7 +6,7 @@ let students = [
 ];
 
 export function listStudents() {
-  return [...students];
+  return students;
 }
 
 export function addStudent(name, grade) {
