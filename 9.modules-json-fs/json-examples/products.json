@@ -1,0 +1,28 @@
+{
+  "products": [
+    {
+      "id": "p001",
+      "name": "Laptop",
+      "price": 1200.50,
+      "inStock": true,
+      "tags": ["electronics", "computers"],
+      "specs": {
+        "cpu": "Intel i7",
+        "ram": "16GB",
+        "storage": "512GB SSD"
+      }
+    },
+    {
+      "id": "p002",
+      "name": "Headphones",
+      "price": 85.99,
+      "inStock": false,
+      "tags": ["electronics", "audio"],
+      "specs": {
+        "type": "over-ear",
+        "wireless": true,
+        "noiseCancelling": true
+      }
+    }
+  ]
+}

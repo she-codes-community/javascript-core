@@ -1,0 +1,8 @@
+{
+  "tasks": [
+    { "id": 101, "title": "Buy groceries", "done": false, "priority": "high" },
+    { "id": 102, "title": "Finish homework", "done": true, "priority": "medium" },
+    { "id": 103, "title": "Book dentist appointment", "done": false, "priority": "low" },
+    { "id": 104, "title": "Workout", "done": false, "priority": "high" }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "Alice Johnson",
+      "email": "alice@example.com",
+      "roles": ["admin", "editor"],
+      "active": true,
+      "profile": {
+        "age": 30,
+        "city": "New York",
+        "interests": ["reading", "cycling", "coding"]
+      }
+    },
+    {
+      "id": 2,
+      "name": "Bob Smith",
+      "email": "bob@example.com",
+      "roles": ["viewer"],
+      "active": false,
+      "profile": {
+        "age": 25,
+        "city": "London",
+        "interests": ["gaming", "traveling"]
+      }
+    }
+  ]
+}

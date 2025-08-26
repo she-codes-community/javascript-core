@@ -1,0 +1,104 @@
+{
+  "store": {
+    "name": "TechWorld",
+    "location": "New York",
+    "categories": [
+      {
+        "id": "c001",
+        "title": "Electronics",
+        "products": [
+          {
+            "id": "p001",
+            "name": "Laptop Pro",
+            "price": 1500,
+            "inStock": true,
+            "specs": {
+              "cpu": "Intel i9",
+              "ram": "32GB",
+              "storage": "1TB SSD",
+              "gpu": "NVIDIA RTX 3060"
+            }
+          },
+          {
+            "id": "p002",
+            "name": "Smartphone X",
+            "price": 899,
+            "inStock": false,
+            "specs": {
+              "screen": "6.5 inch OLED",
+              "battery": "4000mAh",
+              "camera": "108MP"
+            }
+          }
+        ]
+      },
+      {
+        "id": "c002",
+        "title": "Accessories",
+        "products": [
+          {
+            "id": "p010",
+            "name": "Wireless Mouse",
+            "price": 45.5,
+            "inStock": true,
+            "specs": {
+              "dpi": 1600,
+              "wireless": true
+            }
+          },
+          {
+            "id": "p011",
+            "name": "Mechanical Keyboard",
+            "price": 120,
+            "inStock": true,
+            "specs": {
+              "switchType": "Blue",
+              "backlight": true
+            }
+          }
+        ]
+      }
+    ],
+    "customers": [
+      {
+        "id": "u001",
+        "name": "Alice Johnson",
+        "email": "alice@example.com",
+        "orders": [
+          {
+            "orderId": "o1001",
+            "date": "2025-08-01",
+            "items": [
+              { "productId": "p001", "quantity": 1 },
+              { "productId": "p010", "quantity": 2 }
+            ],
+            "total": 1591
+          }
+        ]
+      },
+      {
+        "id": "u002",
+        "name": "Bob Smith",
+        "email": "bob@example.com",
+        "orders": [
+          {
+            "orderId": "o1002",
+            "date": "2025-08-10",
+            "items": [
+              { "productId": "p002", "quantity": 1 }
+            ],
+            "total": 899
+          },
+          {
+            "orderId": "o1003",
+            "date": "2025-08-15",
+            "items": [
+              { "productId": "p011", "quantity": 1 }
+            ],
+            "total": 120
+          }
+        ]
+      }
+    ]
+  }
+}
