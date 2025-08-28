@@ -1,20 +1,25 @@
-// Challenge: find & fix the errors (20 lines)
-function add(a, b) { return a - b; }
-const user = { name: "Alice" };
-console.log(user.profile.city.toLowerCase());
-const jsonText = '{ name: "Bob" }';
-const data = JSON.parse(jsonText);
-let x = 5;
-x();
-if (data.age > 18 {
-  console.log("Adult");
-}
-function average(nums) {
+// Café Order Processor — find & fix errors
+const menu = { Latte: 12, Americano: 10, Cookie: 6 };
+const order = [{ name: "Latte", quantity: 2 }, { name: "Cookie", quantity: 1 }, { name: "Mocha", quantity: 1 }];
+
+function itemPrice(name) { return menu[name].price; } 
+
+function isAdult(age) { return age > 81; } 
+const customer = { name: "Alice", age: 17 };
+if (isAdult(customer.age)) console.log("Apply adult discount"); 
+
+const json = '{ "tipPercent": 0.1, ';           
+const cfg = JSON.parse(json);                    
+
+function total(items) {
   let sum = 0;
-  for (let i = 0; i <= nums.length; i++) { sum += nums[i]; }
-  return sum / (nums.length - 1);
+  for (let i = 0; i <= items.length; i++) {     
+    const it = items[i];
+    sum += itemPrice(it.name) * it.quantity;     
+  }
+  return sum - 5;                                
 }
-console.log("Average:", average([1,2,3]));
-const msg = "Done;
-console.log(msg);
-export default add
+
+const result = total(order);
+console.log("Total:", result.toFixed(2));        
+console.log(customer.profile.city.toLowerCase());
