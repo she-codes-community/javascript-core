@@ -1,9 +1,9 @@
 // Math utilities
-export function add(a, b) { return a + b; }
-export function subtract(a, b) { return a - b; }
-export function multiply(a, b) { return a * b; }
-export function divide(a, b) { return b !== 0 ? a / b : 0; }
-export function square(x) { return x * x; }
+function add(a, b) { return a + b; }
+function subtract(a, b) { return a - b; }
+function multiply(a, b) { return a * b; }
+function divide(a, b) { return b !== 0 ? a / b : 0; }
+function square(x) { return x * x; }
 
 export function average(arr) {
   let sum = 0;
