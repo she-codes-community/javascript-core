@@ -1,16 +1,16 @@
-let surpriseTimer;
+let timers = [];
 
-function scheduleSurprise() {
-  console.log("Surprise scheduled! You have 5 seconds to cancel...");
-  // TODO: setTimeout to log "Surprise!" after 5000 ms
-  // save the id in surpriseTimer
+function startCountdown() {
+  console.log("Starting countdown...");
+  // TODO: setTimeout for 3, 2, 1, Go!
+  // Save each timeout id into the array `timers`
 }
 
-function cancelSurprise() {
-  // TODO: clearTimeout using surpriseTimer
-  console.log("Surprise canceled!");
+function cancelCountdown() {
+  // TODO: loop over `timers` and clearTimeout for each one
+  // Then reset `timers` to an empty array
 }
 
-// Example flow:
-scheduleSurprise();
-// Try calling cancelSurprise() within 5 seconds
+// Example usage:
+startCountdown();
+// Try calling cancelCountdown() quickly to stop it
