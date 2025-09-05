@@ -10,7 +10,10 @@ app.get("/", (req, res) => {
 
 // Example JSON route: GET /api/info
 app.get("/api/info", (req, res) => {
-  res.json({ message: "Welcome to my tiny API", time: new Date().toISOString() });
+  res.json({ 
+    message: "Welcome to my tiny API", 
+    time: new Date().toISOString() 
+  });
 });
 
 // Start server
